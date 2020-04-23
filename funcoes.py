@@ -3,6 +3,14 @@ import json
 
 # Funcoes de texto - informacionais
 
+
+#def escolhas(respostas):
+
+    #msg=""
+
+    #if respostas == "b" in respostas:
+    #    msg = "teste"    
+
 def maissobre(tema):
 
     msg=""

@@ -19,6 +19,7 @@ def logica(comando,usermail):
     
     # comando na variavel box, lower deixa em minusculo para normalizar
     box=sp[0]
+
     
     # Para o caso de nenhum pedido coberto aqui
     mais="\nEscreva 'mais' para saber suas opções"
@@ -36,15 +37,33 @@ def logica(comando,usermail):
     
     # Uso da funcao "mais"
 
-    if box == "mais" and len(sp)<2:
-        msg="Descubra sobre nossas principais ferramentas para ajudá-lo. Escreva:\n"
-        msg=msg+"mais sobre Cliente: conheça nosso programa semanal Quint@s Quinze\n"
-        msg=msg+"mais sobre Demos: nossas ferramentas de demonstração\n"
-        msg=msg+"mais sobre Projetos: nossa ferramenta para ajudar no desenvolvimento de projetos\n"
-        msg=msg+"mais sobre Treinamento: nossas ferramentas e programação de capacitação\n"
-        msg=msg+"mais sobre Suporte: Abertura de Chamados no Cisco TAC\n"
-        msg=msg+"mais sobre Alertas: assine nossas newsletter de Produtos\n"
+    if box == "oi" and len(sp)<2:
+        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
+        msg=msg+ "Qual das seguintes opções deseja ?"   
+        msg=msg+ "(1) - Ativo mais próximo ?"  
+        msg=msg+ "(2) - Disponibilidade ?"
+        msg=msg+ "(3) - Quem está utilizando um ativo?"
 
+    elif box == "ei" and len(sp)<2:
+        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
+        msg=msg+ "Qual das seguintes opções deseja ?"   
+        msg=msg+ "(1) - Ativo mais próximo ?"  
+        msg=msg+ "(2) - Disponibilidade ?"
+        msg=msg+ "(3) - Quem está utilizando um ativo?"
+
+    elif box == "ola" and len(sp)<2:
+        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
+        msg=msg+ "Qual das seguintes opções deseja ?"   
+        msg=msg+ "(1) - Ativo mais próximo ?"  
+        msg=msg+ "(2) - Disponibilidade ?"
+        msg=msg+ "(3) - Quem está utilizando um ativo?"
+
+    else:
+        msg= "Não compreendi o que você quer, por favor, tente mandar um 'oi'"
+
+     
+    respostas=sp[0]
+    msg=escolhas(respostas)
 
     if len(sp)>2:
         tema=sp[2]
