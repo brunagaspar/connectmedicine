@@ -62,8 +62,8 @@ def logica(comando,usermail):
         msg= "Não compreendi o que você quer, por favor, tente mandar um 'oi'"
 
      
-    respostas=sp[0]
-    msg=escolhas(respostas)
+    # respostas=sp[0]
+    # msg=escolhas(respostas)
 
     if len(sp)>2:
         tema=sp[2]
