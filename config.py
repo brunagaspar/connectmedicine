@@ -1,5 +1,5 @@
 # Ponha aqui os dados do seu robozinho
-bottoken='ZmMwYmVmOTktZmI4OS00OTJiLWEwMzgtODViMTdhZGI3Zjg5OTk1ZGFlZGEtZDdh_PF84_a892a6ed-b823-46b8-8336-847d8f4722ae'
+bottoken='ZDUzZjE3YjItNDY1Zi00ZTk5LTliMDctZmFhOGQ1YTBiZmI0ZDc2ODZmNDctNTI0_PF84_a892a6ed-b823-46b8-8336-847d8f4722ae'
 #exemplo='Yia0dsfdsfsdf...' - tirado do site developer.webex.com
 botmail="CONNECTEDMEDICINE@webex.bot"
 #exemplo='mybotmail@spark.io' - tirado do site developer.webex.com
