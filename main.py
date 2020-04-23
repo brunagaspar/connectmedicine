@@ -14,7 +14,7 @@ if msg=="erro":
 #Formato de execucao em modo console (teste)
 formato = "c"
 
-if formato=="c":
+if formato=="w":
 
     box=""
 
