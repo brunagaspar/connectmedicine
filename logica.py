@@ -14,12 +14,85 @@ def logica(comando,usermail):
     #Separa o comando por espacos
     #Primeiro item e'o comando em si, os demais sao parametros deste comando
     #
-    comando=comando.lower()
-    sp=comando.split(" ")
+    
+    comando = comando.lower()
+    box=comando
+
+    while box == "oi":
+        msg=""
+        arquivo=""
+        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
+        msg=msg+ "Qual das seguintes opções deseja ?\n"   
+        msg=msg+ "(1) - Ativo mais próximo ?\n"  
+        msg=msg+ "(2) - Ativos Disnponíveis ?\n"
+        msg=msg+ "(3) - Quem está utilizando um ativo?\n"
+        return msg,arquivo
+    else:
+        msg=""
+        arquivo=""
+        box2 = box
+        #condicional para os serviços de ativos proximos
+        if box2 == "1":
+            msg="o ativo mais próximo é o ativo 32545"
+            return msg,arquivo
+        elif box2 == "ativo":
+            msg="o ativo mais próximo é o ativo 32545"
+            return msg,arquivo
+        elif box2 == "proximo":
+            msg="o ativo mais próximo é o ativo 32545"
+            return msg,arquivo
+        elif box2 == "ativo proximo":
+            msg="o ativo mais próximo é o ativo 32545"
+            return msg,arquivo
+        #ajudinha antecedendo possíveis erros de digitação de ativos proximos 
+        elif box2 == "ativa":
+            msg="As palavras que você digitou chegaram perto de 'ativo proximo' e 'proximo', tente elas"
+            return msg,arquivo
+        elif box2 == "procimo":
+            msg="As palavras que você digitou chegaram perto de 'ativo proximo' e 'proximo', tente elas"
+            return msg,arquivo
+        elif box2 == "acivo":
+            msg="As palavras que você digitou chegaram perto de 'ativo proximo' e 'proximo', tente elas"
+            return msg,arquivo
+        #ativos disponíveis
+        elif box2 == "2":
+            msg="Os ativos disponíveis são a maca de serial: 12345 e a cadeira de rodas de serial: 12331"
+            return msg,arquivo
+        elif box2 == "disponivel":
+            msg="Os ativos disponíveis são a maca de serial: 12345 e a cadeira de rodas de serial: 12331"
+            return msg,arquivo
+        elif box2 == "disponibilidade":
+            msg="Os ativos disponíveis são a maca de serial: 12345 e a cadeira de rodas de serial: 12331"
+            return msg,arquivo
+        elif box2 == "ativo disponível":
+            msg="Os ativos disponíveis são a maca de serial: 12345 e a cadeira de rodas de serial: 12331"
+            return msg,arquivo
+        #possíveis erros de digitação em ativos disponíveis
+        elif box2 == "disponibel":
+            msg="As palavras que você digitou chegaram perto de 'disponivel' , 'disponibilidade', tente elas"
+            return msg,arquivo        
+        elif box2 == "disponibilidads":
+            msg="As palavras que você digitou chegaram perto de 'disponivel' , 'disponibilidade', tente elas"
+            return msg,arquivo
+        #Quem está utilizando o ativo
+        elif box2 == "3" or box2 == "utilizando":
+            msg= "Quem esta utilizando o ativo é Fernanda"
+            return msg,arquivo
+        #Possiveis erros de utilizando o ativo
+        elif box2 == "utilandi" or box2 == "utiliza":
+            msg: "As palavras que você digitou chegaram perto de 'utilizando', tente elas"
+            return msg,arquivo
+
+        
+            
+
+
+
+    # sp=comando.split(" ")
+
+    # print(sp)
     
     # comando na variavel box, lower deixa em minusculo para normalizar
-    box=sp[0]
-
     
     # Para o caso de nenhum pedido coberto aqui
     mais="\nEscreva 'mais' para saber suas opções"
@@ -27,9 +100,9 @@ def logica(comando,usermail):
     # 21.11.19
     # variavel arquivo para o caso do bot devolver arquivos anexados
     
-    arquivo=""
+    # arquivo=""
     
-    msg=""
+    # msg=""
 	
     # chamadas de acordo com os parametros
 
@@ -37,48 +110,56 @@ def logica(comando,usermail):
     
     # Uso da funcao "mais"
 
-    if box == "oi" and len(sp)<2:
-        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
-        msg=msg+ "Qual das seguintes opções deseja ?"   
-        msg=msg+ "(1) - Ativo mais próximo ?"  
-        msg=msg+ "(2) - Disponibilidade ?"
-        msg=msg+ "(3) - Quem está utilizando um ativo?"
+    print(comando)
+    print(box)
 
-    elif box == "ei" and len(sp)<2:
-        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
-        msg=msg+ "Qual das seguintes opções deseja ?"   
-        msg=msg+ "(1) - Ativo mais próximo ?"  
-        msg=msg+ "(2) - Disponibilidade ?"
-        msg=msg+ "(3) - Quem está utilizando um ativo?"
+    if box == "oi":
+        
+        
+        if box == "1":
+            msg="dancing"
 
-    elif box == "ola" and len(sp)<2:
+    elif box == "ei":
         msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
-        msg=msg+ "Qual das seguintes opções deseja ?"   
-        msg=msg+ "(1) - Ativo mais próximo ?"  
-        msg=msg+ "(2) - Disponibilidade ?"
-        msg=msg+ "(3) - Quem está utilizando um ativo?"
+        msg=msg+ "Qual das seguintes opções deseja ?\n"   
+        msg=msg+ "(1) - Ativo mais próximo ?\n"  
+        msg=msg+ "(2) - Disponibilidade ?\n"
+        msg=msg+ "(3) - Quem está utilizando um ativo?\n"
+
+    elif box == "ola":
+        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
+        msg=msg+ "Qual das seguintes opções deseja ?\n"   
+        msg=msg+ "(1) - Ativo mais próximo ?\n"  
+        msg=msg+ "(2) - Disponibilidade ?\n"
+        msg=msg+ "(3) - Quem está utilizando um ativo?\n"
+
+    elif box == "alo":
+        msg= "Olá eu sou o Connect Medicine e estou aqui pra ajudar:\n" 
+        msg=msg+ "Qual das seguintes opções deseja ?\n"   
+        msg=msg+ "(1) - Ativo mais próximo ?\n"  
+        msg=msg+ "(2) - Disponibilidade ?\n"
+        msg=msg+ "(3) - Quem está utilizando um ativo?\n"
 
     else:
-        msg= "Não compreendi o que você quer, por favor, tente mandar um 'oi'"
+        msg="Não entendi o que você quis dizer, por favor tente dizer 'Oi' pra mim"
 
-     
-    # respostas=sp[0]
-    # msg=escolhas(respostas)
 
-    if len(sp)>2:
-        tema=sp[2]
-        msg=maissobre(tema)
+    #  if len(sp)>2:
+    #             tema=sp[1]
+    #             msg=maissobre(tema)
+    #             print(sp)
+    
         
-    # Funcoes que usam outras APIs
-    if len(sp)>1 and box=="api":
-        # URL
-        site="apitesteexample.com"
-        # Parametro de autorizacao
-        token="123456"
-        msg=APICall(site,token)
+    # # Funcoes que usam outras APIs
+    # if len(sp)>1 and box=="api":
+    #     # URL
+    #     site="apitesteexample.com"
+    #     # Parametro de autorizacao
+    #     token="123456"
+    #     msg=APICall(site,token)
         
 
-    return msg,arquivo
+    # return msg,arquivo
 
 
 def trataPOST(content):

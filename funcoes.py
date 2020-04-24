@@ -4,27 +4,19 @@ import json
 # Funcoes de texto - informacionais
 
 
-#def escolhas(respostas):
-
-    #msg=""
-
-    #if respostas == "b" in respostas:
-    #    msg = "teste"    
-
 def maissobre(tema):
 
     msg=""
 
-    if tema!="" and "cliente" in tema:
-        msg="Participe Regularmente de nossas atualizações de soluções para Cliente.\n"
-        msg=msg+"Acesse nossa agenda: http://www.cisco.com/c/pt_br/about/events-schedule/quintas-quinze.html\n"
-        msg=msg+"O Quint@s Quinze é transmitido on-line. Se inscreva e participe\n"	
+    if tema!="" and "A" in tema:
+        msg="o ativo mais próximo é o ativo 32545\n"
+        msg=msg+"Se for utilizar o ativo, não se esqueça de higienizalo\n"
+        msg=msg+"\n"	
         
-    if tema!="" and "demo" in tema:
-        msg="Conheça, aprenda e demonstre todas as soluções Cisco on-line\n"
-        msg=msg+"Nossos produtos podem ser testados e acessados usando a nuvem da Cisco.\n"
-        msg=msg+"Conheça http://dcloud.cisco.com\n"
-        msg=msg+"Produtos Cisco Small Business http://www.cisco.com/go/emulators\n"
+    if tema!="" and "ativo proximo" in tema:
+        msg="o ativo mais próximo é o ativo 32545\n"
+        msg=msg+"Se for utilizar o ativo, não se esqueça de higienizalo\n"
+        msg=msg+"\n"
         
     if tema!="" and "projeto" in tema:
         msg="Precisa de ajuda para desenvolvimento de projetos? Nosso time virtual Partner Help Line é o canal para\n"
