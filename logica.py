@@ -159,7 +159,7 @@ def logica(comando,usermail):
     #     msg=APICall(site,token)
         
 
-    # return msg,arquivo
+    return msg,arquivo
 
 
 def trataPOST(content):
